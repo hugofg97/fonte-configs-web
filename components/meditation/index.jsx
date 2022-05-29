@@ -137,10 +137,10 @@ export default function AppSection() {
               />
             </div>
           </div>
-        <h1 style={{ textAlign: "center" }}>
+        {/* <h1 style={{ textAlign: "center" }}>
           Atendimento presencial ou a distância
-        </h1>
-        <div className={styles.call_content}>
+        </h1> */}
+        {/* <div className={styles.call_content}>
           <h4>Veja todo o processo e nosso ambiente.</h4>
           <p style={{ maxWidth: "700px" }}>
           Nosso sala de atendimento está anexo ao espaço terapêutico Refúgio da Consciência que
@@ -170,7 +170,7 @@ Agende um horário e venha nos visitar!
           </h5>
           <SlideTeraphy />
         
-        </div>
+        </div> */}
       </div>
       <h1 style={{ textAlign: "center" }}>Fundadora</h1>
       <div style={{ display: "flex" }}>
