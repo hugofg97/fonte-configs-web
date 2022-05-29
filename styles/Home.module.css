@@ -1,22 +1,160 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
+  /* background-color: red, */
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(104, 132, 109, 1);
+  justify-content: space-between;
+  padding: 5px;
+  height: 60px;
+}
+
+.header_logo {
+  width: 70px;
+  height: 70px;
+  /* background-color: red; */
+  position: relative;
+  margin-left: 10px;
+  margin-top: -10px;
+
+}
+
+.header_buttons {
+  background: transparent;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin: auto;
+  border: none;
+  color: white;
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.presentation {
+  min-height: 700px;
+  display: flex;
+  background-image: url("/terapia-2.jpeg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 1200px 900px;
+  width: 100%;
+
+
+}
+
+.presentation_content {
+  display: flex;
+  /* margin-top: 30px; */
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  margin: auto;
+  min-height: 700px;
+  background-color: rgba(104, 132, 109, 0.6);
+  text-align: center;
+  align-items: center;
+  background-size: contain;
+  justify-content: center;
+
+
+
+}
+
+.meditation {
+  padding: 16px;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 1200px;
+
+}
+
+.carousel_app {
+  margin: auto;
+  width: 200px
+}
+
+.slide_app_images {
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+.we_app {
+  min-height: 600px;
+  background-color: rgba(104, 132, 109, 0.8);
+  color: white;
+  padding: 32px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+.we_app>h1 {
+  text-align: center;
+}
+
+.info_app {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.doctor_info_desktop {
+  display: block
+}
+
+.doctor_info_mobile {
+  display: none
+}
+
+.paragraphy_info_app {
+  margin-right: 50px;
+  font-size: 20px
+}
+
+.meditation>h1 {
+  font-size: 23px;
+  color: rgb(104, 136, 109);
+  margin-top: 50px;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.meditation>h4 {
+  font-size: 15px;
+  color: rgb(104, 136, 109)
+}
+
+.meditation>p {
+  margin-top: -15px
+}
+
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  background-color: rgb(104, 132, 109);
   justify-content: center;
   align-items: center;
 }
@@ -28,24 +166,23 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  max-width: 650px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: -10px;
 }
 
-.title,
+.subtitle {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: -10px;
+}
+
 .description {
   text-align: center;
 }
@@ -108,9 +245,352 @@
   margin-left: 0.5rem;
 }
 
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.grid {
+  width: 100%;
+  flex-direction: column;
+}
+
+.call_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_caroulsel_teraphy {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.caroulsel_teraphy {
+  width: 100%;
+  /* background-color: red; */
+  /* position: relative; */
+}
+
+.reiki_Principles>h1 {
+  color: rgba(104, 132, 109, 1);
+  text-align: center;
+}
+
+.reiki_Principles>p {
+  color: rgba(104, 132, 109, 1);
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
+  .presentation {
+    min-height: 700px;
+    display: flex;
+    background-image: url("/nak.jpeg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 500px 800px;
+    width: 100%;
+
+
+  }
+
+  .reiki_Principles>h1 {
+    color: rgba(104, 132, 109, 1);
+    text-align: center;
+  }
+
+  .reiki_Principles>p {
+    color: rgba(104, 132, 109, 1);
+    font-weight: bold;
+  }
+
+  .container {
+    /* padding: 0 2rem; */
+    /* background-color: red, */
+  }
+
+  .image_caroulsel_teraphy {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .caroulsel_teraphy {
+    width: 100%;
+    /* background-color: red; */
+    /* position: relative; */
+  }
+
+  .call_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(104, 132, 109, 1);
+    justify-content: space-between;
+    padding: 5px;
+    height: 60px;
+  }
+
+  .header_logo {
+    width: 70px;
+    height: 70px;
+    /* background-color: red; */
+    position: relative;
+    margin-left: 10px;
+    margin-top: -10px;
+
+  }
+
+  .header_buttons {
+    background: transparent;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin: auto;
+    border: none;
+    color: white;
+  }
+
+  .main {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reiki {
+    min-height: 500px;
+    display: flex;
+    background-image: url("/woman-reiki.jpeg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+
+
+  }
+
+  .meditation {
+    padding: 16px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+
+  }
+
+  .meditation>h1 {
+    font-size: 23px;
+    color: rgb(104, 136, 109);
+    margin-top: 50px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+  }
+
+  .meditation>h4 {
+    font-size: 15px;
+    color: rgb(104, 136, 109)
+  }
+
+  .meditation>p {
+    margin-top: -15px
+  }
+
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    background-color: rgb(104, 132, 109);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .title {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: -10px;
+  }
+
+  .subtitle {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: -10px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+
+  .gallery {
+    background: #EEE;
+  }
+
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .slide_app_images {
+    width: 600px;
+    height: 500px;
+    position: relative;
+  }
+
+  .caroulsel_app {
+    margin: auto;
+  }
+
+  .info_app {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  .paragraphy_info_app {
+    margin: 0;
+    font-size: 20px
+  }
+
+  .we_app {
+    min-height: 600px;
+    background-color: rgba(104, 132, 109, 0.8);
+    color: white;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .doctor_info_desktop {
+    display: none
+  }
+
+  .doctor_info_mobile {
+    display: block
   }
 }
