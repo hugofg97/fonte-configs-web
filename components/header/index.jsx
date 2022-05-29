@@ -21,11 +21,14 @@ export default function Header() {
         
         }}
       >
+        <a href="https://app.fontereiki.com.br/" target="_blank ">
+
         <button
          className={styles.header_buttons}
         >
           Login
         </button>
+        </a>
       </div>
     </div>
   );
